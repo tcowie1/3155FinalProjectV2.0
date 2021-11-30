@@ -3,6 +3,8 @@ import numpy as np
 import pandas as pd
 from data.create_data import create_table
 
+#We gotta make sure to put the data in the data folder and then import it correctly.
+
 def app():
     st.title('Salaries')
 
