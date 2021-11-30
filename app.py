@@ -8,5 +8,6 @@ app = MultiApp()
 app.add_app("Home", home.app)
 app.add_app("Data Stats", data_stats.app)
 
+
 # The main app
 app.run()

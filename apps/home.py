@@ -8,7 +8,7 @@ from data.create_data import create_table
 
 def app():
     st.title('UniSight')
-    st.write("At Unisight, we want to provide accessable, easy-to-read data and visuals to help potential and current students make informed decisions on college degrees")
+    st.write("At Unisight, we want to provide accessable, easy-to-read data and visuals to help potential and current students make informed decisions on college degrees and the careers they lead to. Guiding individuals through major college and career decisions, with up-to-date information, is our objective.")
     st.write("See `apps/home.py` to know how to use it.")
 
     st.markdown("### Sample Data")
