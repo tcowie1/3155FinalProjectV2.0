@@ -2,24 +2,16 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from data.create_data import create_table
-from collections import namedtuple
-import altair as alt
-import math
 
 def app():
+    st.title('Home')
 
-#Home and Navigation Setup
-st.set_page_config(page_title='UniSight', page_icon=":goat:")
-"""
-# UniSight
+    st.write("This is a sample home page in the mutliapp.")
+    st.write("See `apps/home.py` to know how to use it.")
 
-At UniSight, we want to provide accessible, easy-to-read data and 
-visuals to help potential and current students make informed decisions 
-on college degrees and the careers they lead to. Guiding individuals through 
-major college and career decisions, with up-to-date information, is our 
-objective.
+    st.markdown("### Sample Data")
+    df = create_table()
+    st.write(df)
 
-"""
-#Sidebar Navigation
-st.sidebar.header("Home")
-navChoice = st.sidebar.selectbox('Navigation', ('Home', 'Salaries', 'Loans'))
+    st.write('Navigate to `Data Stats` page to visualize the data')
+
