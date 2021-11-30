@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import math
 import altair as alt
+from collections import namedtuple
 from data.create_data import create_table
 
 def app():
