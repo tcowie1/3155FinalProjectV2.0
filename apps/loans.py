@@ -23,7 +23,7 @@ def app():
     payoffTime = st.slider(label='Time to Payoff (Yrs):', min_value=0, max_value=30, value=18, help='This is the amount of time in years it will take for you to pay off the loan.')
 
     #Calculations
-    interestPayed = (loanAmount * (interest / 100)) ** payoffTime
+    interestPayed = (loanAmount * (interest / 100)) * payoffTime
     st.markdown("### Interest Paid: ")
     st.write(str(interestPayed))
 
