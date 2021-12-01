@@ -14,6 +14,7 @@ def app():
     st.write("Loans are something most students will have to face when going to college, however, many students especially at the highschool age aren't aware of the true cost of a loan they take out for college.")
 
     #Basic loan cost calculator intro
+    st.markdown("### Simple Loan Cost Calculator")
     st.write("This simple calculator will show you what a loan can cost you by the time you pay it off.")
     st.write("By default it is loaded with values based on the average student loan borower.")
 
