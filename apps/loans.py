@@ -17,7 +17,7 @@ def app():
     st.markdown("### Simple Loan Cost Calculator")
     st.write("This simple calculator will show you what a loan can cost you by the time you pay it off.")
     st.write("By default it is loaded with values based on the average student loan borower.")
-    st.write("This calculator is not financial advice and should not be used for calculating your loan costs. Ask you lender for verified information.")
+    st.write("This calculator is not financial advice and should not be used for calculating your loan costs. Ask your lender for verified information.")
 
     #Loan Cost Calculator
     loanAmount = st.number_input('Loan Amount: $', min_value=0, value=30000, step=5000)
