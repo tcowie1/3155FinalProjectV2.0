@@ -22,10 +22,14 @@ def app():
     interest = st.slider(label='Interest in %:', min_value=3, max_value=10, value=6 ,help='This is the Annual Percent Interest on the loan.')
     payoffTime = st.slider(label='Time to Payoff (Yrs):', min_value=0, max_value=30, value=18, help='This is the amount of time in years it will take for you to pay off the loan.')
 
+    #Calculations
+    interestPayed = (loanAmount * (interest / 100)) ** payoffTime
+    st.markdown("### Interest Paid: " + interestPayed)
+
 
     st.markdown("### Symons Data Area")
     
-    st.markdown("Sources")
+    st.markdown("### Sources")
     st.write("https://educationdata.org/average-student-loan-debt")
     st.write("https://educationdata.org/average-student-loan-debt")
     st.write("https://educationdata.org/average-student-loan-interest-rate#:~:text=5.8%25%20is%20the%20average%20student%20loan%20interest%20rate%20among%20all,rates%20fell%20an%20average%2031.24%25.")
