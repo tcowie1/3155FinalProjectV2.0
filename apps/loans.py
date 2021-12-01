@@ -25,6 +25,7 @@ def app():
     #Calculations
     interestPayed = (loanAmount * (interest / 100)) ** payoffTime
     st.markdown("### Interest Paid: ")
+    st.write(interestPayed)
 
 
     st.markdown("### Symons Data Area")
