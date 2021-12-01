@@ -17,6 +17,7 @@ def app():
     st.markdown("### Simple Loan Cost Calculator")
     st.write("This simple calculator will show you what a loan can cost you by the time you pay it off.")
     st.write("By default it is loaded with values based on the average student loan borower.")
+    st.write("This calculator is not financial advice and should not be used for calculating your loan costs. Ask you lender for verified information.")
 
     #Loan Cost Calculator
     loanAmount = st.number_input('Loan Amount: $', min_value=0, value=30000, step=5000)
@@ -24,13 +25,14 @@ def app():
     payoffTime = st.slider(label='Time to Payoff (Yrs):', min_value=0, max_value=30, value=18, help='This is the amount of time in years it will take for you to pay off the loan.')
 
     #Calculations
-    interestPayed = (loanAmount * (interest / 100)) * payoffTime
+    interestPayed = (loanAmount * (interest / 100)) * payoffTime    #principle * rate * time
     st.markdown("### Interest Paid: " + str(interestPayed))
     st.markdown("### Total Cost of Loan: " + str(interestPayed + loanAmount))
 
-
+    #Data Visaulization
     st.markdown("### Symons Data Area")
-    
+
+    #Sources
     st.markdown("### Sources")
     st.write("https://educationdata.org/average-student-loan-debt")
     st.write("https://educationdata.org/average-student-loan-debt")
