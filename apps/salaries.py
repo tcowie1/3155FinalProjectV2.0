@@ -1,6 +1,9 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import math
+import altair as alt
+from collections import namedtuple
 from data.create_data import create_table
 
 #We gotta make sure to put the data in the data folder and then import it correctly.
