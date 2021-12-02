@@ -6,10 +6,6 @@ import altair as alt
 from collections import namedtuple
 from data.create_data import create_table
 
- #Page Config
-    #st.set_page_config(initial_sidebar_state="collapsed")
-    #st.set_page_config(page_title='UniSight', page_icon=":goat:")  #These dont work with multipage. Need to investigate.
-
 def app():
     #Title and Intro
     st.title('UniSight')
