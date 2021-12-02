@@ -10,7 +10,7 @@ app = MultiApp()
 app.add_app("Home", home.app)
 app.add_app("Loans", loans.app)
 app.add_app("Salaries", salaries.app)
-app.add_app("Data Stats, data_stats.app")
+app.add_app("Data Stats", data_stats.app)
 app.add_app("About", about.app)
 
 # The main app
