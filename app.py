@@ -1,5 +1,4 @@
 import streamlit as st
-#Page Config
 st.set_page_config(initial_sidebar_state="collapsed")
 #st.set_page_config(page_title='UniSight', page_icon=":goat:")
 from multiapp import MultiApp
