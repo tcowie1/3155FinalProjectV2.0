@@ -4,12 +4,6 @@ st.set_page_config(initial_sidebar_state="collapsed")
 from multiapp import MultiApp
 from apps import home, loans, salaries, about, data_stats # import your app modules here
 
-# hide_footer_style = """
-#     <style>
-#     .reportview-container .main footer {visibility: hidden;}    
-#     """
-# st.markdown(hide_footer_style, unsafe_allow_html=True)
-
 app = MultiApp()
 
 # Add all your application here
